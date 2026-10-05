@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"></head><body class="dash"><aside><a class="brand"><b>V</b> Vishal</a><div class="usercard"><div class="avatar">A</div><b>Administrator</b><small>Admin Module</small></div><nav><a class="active" href="#">⌂ Dashboard</a><a href="#projects">▦ Projects</a><a href="#blogs">◫ Blogs</a><a href="#messages">✉ Messages</a><a href="#users">♙ Users</a></nav><button id="logout">↪ Logout</button></aside><main class="dashmain"><header class="dashhead"><div><small>ADMIN MODULE</small><h1>Control <em>center.</em></h1></div><a class="btn ghost" href="index.html">View Website ↗</a></header><div class="statgrid"><article><small>USERS</small><b id="usersN">0</b><span>Registered accounts</span></article><article><small>PROJECTS</small><b id="projectsN">0</b><span>Portfolio projects</span></article><article><small>BLOGS</small><b id="blogsN">0</b><span>Published content</span></article><article><small>MESSAGES</small><b id="messagesN">0</b><span>Contact submissions</span></article></div><section class="insightbar"><div><small>SYSTEM STATUS</small><b><i class="status-dot"></i> All modules operational</b><span>LocalStorage • Authentication • CRUD • Navigation</span></div><div><small>LAST ACTIVITY</small><b id="lastActivity">No activity yet</b><span>Updates appear here during the demo.</span></div></section>
+<section id="projects" class="panel"><div class="title"><div><small>PROJECT MANAGEMENT</small><h2>Projects</h2></div><button class="btn" id="showP">+ Add Project</button></div><form id="pform" class="manage hidden"><input id="pid" type="hidden"><input id="pt" required placeholder="Project title"><select id="pcat"><option>Web</option><option>JavaScript</option><option>Design</option></select><input id="pd" required placeholder="Short description"><input id="ptc" required placeholder="Technologies"><div><button class="btn">Save Project</button> <button type="button" class="btn ghost" id="cancelP">Cancel</button></div></form><div id="plist"></div></section>
+<section id="blogs" class="panel"><div class="title"><div><small>CONTENT MANAGEMENT</small><h2>Blogs</h2></div><button class="btn" id="showB">+ Add Blog</button></div><form id="bform" class="manage hidden"><input id="bid" type="hidden"><input id="bt" required placeholder="Blog title"><input id="bc" required placeholder="Category"><textarea id="bd" required placeholder="Blog summary"></textarea><div><button class="btn">Save Blog</button> <button type="button" class="btn ghost" id="cancelB">Cancel</button></div></form><div id="blist"></div></section>
+<section id="messages" class="panel"><small>INBOX</small><h2>Contact messages</h2><div id="mlist"></div></section><section id="users" class="panel"><small>USER MANAGEMENT</small><h2>Registered users</h2><div id="ulist"></div></section><section class="panel activity-panel"><div class="title"><div><small>LIVE ACTIVITY</small><h2>Recent actions</h2></div><button class="smallbtn" id="clearActivity" type="button">Clear</button></div><div id="activityList"></div></section>
+        <!-- ADMIN USER MANAGEMENT ENHANCED -->
+        <section class="admin-management-card">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">ADMIN CONTROL</span>
+              <h2>Manage Users & Portfolio Data</h2>
+              <p>View registered users and manage their projects and skills.</p>
+            </div>
+          </div>
+          <div id="adminUserManagement" class="admin-user-management">
+            <p class="muted">Loading users...</p>
+          </div>
+        </section>
+        
+</main><script src="js/admin.js"></script><script src="js/admin-management.js"></script>
+</body></html>
